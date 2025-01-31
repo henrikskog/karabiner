@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "apply": "deno fmt && deno run --allow-env --allow-read --allow-write script.ts"
+  }
+}

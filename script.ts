@@ -30,25 +30,25 @@ export const rules = () => [
   ]),
 
   rule("Left arrow").manipulators([
-    map("h", "left_command", ["left_option", "left_control", "left_shift"]).to(
+    map("h", "left_command", ["left_option", "left_shift"]).to(
       "left_arrow",
     ),
   ]),
 
   rule("Down arrow").manipulators([
-    map("j", "left_command", ["left_option", "left_control", "left_shift"]).to(
+    map("j", "left_command", ["left_option", "left_shift"]).to(
       "down_arrow",
     ),
   ]),
 
   rule("Up arrow").manipulators([
-    map("k", "left_command", ["left_option", "left_control", "left_shift"]).to(
+    map("k", "left_command", ["left_option", "left_shift"]).to(
       "up_arrow",
     ),
   ]),
 
   rule("Right arrow").manipulators([
-    map("l", "left_command", ["left_option", "left_control", "left_shift"]).to(
+    map("l", "left_command", ["left_option", "left_shift"]).to(
       "right_arrow",
     ),
   ]),
