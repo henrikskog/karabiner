@@ -43,7 +43,7 @@ export const rules = () => [
   rule("Control tab forwards").manipulators([
     map("k", HYPER_MODIFIERS).to({
       key_code: "tab",
-      modifiers: ["left_control", "left_shift"]
+      modifiers: ["left_control"]
     }),
   ]),
 
