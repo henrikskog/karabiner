@@ -25,19 +25,19 @@ export const rules = () => [
   ]),
 
   rule("Left arrow").manipulators([
-    map("h", "left_command").to("left_arrow"),
+    map("h", "left_command", ["left_option", "left_control"]).to("left_arrow"),
   ]),
 
   rule("Down arrow").manipulators([
-    map("j", "left_command").to("down_arrow"),
+    map("j", "left_command",  ["left_option", "left_control"]).to("down_arrow"),
   ]),
 
   rule("Up arrow").manipulators([
-    map("k", "left_command").to("up_arrow"),
+    map("k", "left_command", ["left_option", "left_control"]).to("up_arrow"),
   ]),
 
   rule("Right arrow").manipulators([
-    map("l", "left_command").to("right_arrow"),
+    map("l", "left_command", ["left_option", "left_control"]).to("right_arrow"),
   ]),
 
   rule("Control tab forwards").manipulators([
