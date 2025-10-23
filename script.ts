@@ -86,6 +86,12 @@ export const rules = () => [
       key_code: "return_or_enter",
     }),
   ]),
+
+  rule("Backspace").manipulators([
+    map("r", HYPER_MODIFIERS).to({
+      key_code: "delete_or_backspace",
+    }),
+  ]),
 ];
 
 writeToProfile(PROFILE_SCRIPT_WRITES_TO, rules());
