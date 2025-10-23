@@ -80,6 +80,12 @@ export const rules = () => [
       modifiers: ["left_option", "left_command"],
     }),
   ]),
+
+  rule("Enter").manipulators([
+    map("f", HYPER_MODIFIERS).to({
+      key_code: "return_or_enter",
+    }),
+  ]),
 ];
 
 writeToProfile(PROFILE_SCRIPT_WRITES_TO, rules());
