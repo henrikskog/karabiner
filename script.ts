@@ -88,7 +88,7 @@ export const rules = () => [
   ]),
 
   rule("Backspace").manipulators([
-    map("r", HYPER_MODIFIERS).to({
+    map("d", HYPER_MODIFIERS).to({
       key_code: "delete_or_backspace",
     }),
   ]),
