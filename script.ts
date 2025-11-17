@@ -92,6 +92,14 @@ export const rules = () => [
       key_code: "delete_or_backspace",
     }),
   ]),
+
+  rule("Disable native Enter").manipulators([
+    map("return_or_enter").toNone(),
+  ]),
+
+  rule("Disable native Backspace").manipulators([
+    map("delete_or_backspace").toNone(),
+  ]),
 ];
 
 writeToProfile(PROFILE_SCRIPT_WRITES_TO, rules());
